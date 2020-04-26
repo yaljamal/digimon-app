@@ -1,0 +1,21 @@
+body {
+    background-color: #044f4f;
+    width: 100%;
+}
+
+.itemes {
+    background-color: black;
+    text-align: center;
+    width: 50%;
+    color: blanchedalmond;
+}
+
+.fav {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.inputForm {
+    width: 45%;
+    margin-top: 3%;
+}

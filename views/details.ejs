@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <% result.forEach(val=>{%>
+        <img src="<%=val.img%>" alt="">
+        <h2>
+            <%=val.name%>
+        </h2>
+        <h2>
+            <%=val.level%>
+        </h2>
+
+        <form action="/delete/<%=val.id%>?_method=delete" method="post">
+            <button type="submit">Delete</button>
+        </form>
+
+        <form action="/update/<%=val.id%>?_method=put" method="post">
+            <input type="text" value="<%=val.level%>" name="name"><br>
+            <input type="text" value="<%=val.img%>" name="img" id=""><br>
+            <input type="text" value="<%=val.level%>" name="level" id=""><br>
+            <button type="submit">Update Data</button>
+        </form>
+
+        <% }) %>
+</body>
+
+</html>
